@@ -1,0 +1,7 @@
+---
+- name: Playbook for shell script
+  hosts: 172.31.13.32
+
+  tasks:
+  - name: run shell script
+    shell: "/home/ansadmin/cfile.sh"

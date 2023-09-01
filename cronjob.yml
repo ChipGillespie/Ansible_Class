@@ -1,0 +1,15 @@
+---
+- name: create cron job
+  hosts: 172.31.13.32 
+
+  tasks:
+  - name: schedule cron
+    cron:
+      name: This is a job 
+      minute: "0"
+      hour: "10"
+      day: "*"
+      month: "*"
+      weekday: "4"
+      user: root
+      job: "/home/ansadmin/cfile.sh"
