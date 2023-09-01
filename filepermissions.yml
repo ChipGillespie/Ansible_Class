@@ -1,0 +1,10 @@
+---
+- name: change file permissions
+  hosts: all 
+  become: true
+
+  tasks:
+  - name: File Permissions
+    file:
+      path: /home/ansadmin/linux2
+      mode: a+w

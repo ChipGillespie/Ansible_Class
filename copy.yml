@@ -1,0 +1,13 @@
+---
+- name: copy file
+  hosts: webServers
+
+  tasks:
+    - name: copying file 
+      become: true 
+      copy:
+        src: /opt/ansible/index.html
+        dest: /tmp 
+        owner: ansadmin
+        group: ansadmin
+        mode: 0644
