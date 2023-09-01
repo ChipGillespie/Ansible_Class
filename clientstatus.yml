@@ -1,0 +1,7 @@
+---
+- name: Check remote clients connectiviity status
+  hosts: webServers
+
+  tasks:
+  - name: Test connectivity
+    ping: 
